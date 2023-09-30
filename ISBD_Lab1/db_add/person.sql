@@ -1,0 +1,10 @@
+insert into person (person_id, name, age, gender) values (2, 'Eriston', null, 'M');
+insert into person (person_id, name, age, gender) values (3, 'Itania', null, 'F');
+insert into person (person_id, name, age, gender) values (1, 'Olvin', 20, 'M');
+insert into person (person_id, name, age, gender) values (4, 'Dhjizirak', 950, 'M');
+insert into person (person_id, name, age, gender) values (10, 'Ivan Petrov', 30, 'M');
+insert into person (person_id, name, age, gender) values (11, 'Sergey Petrov', 10, 'M');
+insert into person (person_id, name, age, gender) values (9, 'Andrey Petrov', 30, 'M');
+insert into person (person_id, name, age, gender) values (8, 'Elizaveta Petrova', 30, 'F');
+insert into person (person_id, name, age, gender) values (20, 'Alistra', 20, 'F');
+insert into person (person_id, name, age, gender) values (37, 'Floranus', 25, 'M');
