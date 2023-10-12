@@ -10,7 +10,7 @@ CREATE TABLE "person"
 (
     "person_id" int primary key,
     "name"      varchar(20) not null,
-    "age"       int CHECK ("age" > 0),
+    "birthdate"       date not null,
     "gender"    char(1) CHECK ("gender" = 'M' or "gender" = 'F')
 );
 
@@ -18,8 +18,8 @@ CREATE TABLE "person"
 CREATE TABLE "parents"
 (
     "parent_id"  int references "person" ("person_id"),
-    "child_name" varchar(20),
-    PRIMARY KEY ("parent_id", "child_name")
+    "child_id" int references "person" ("person_id"),
+    PRIMARY KEY ("parent_id", "child_id")
 );
 
 
@@ -37,7 +37,7 @@ CREATE TABLE "city"
     "city_name" varchar(20),
     PRIMARY KEY ("city_name", "obj_name")
 );
-CREATE TABLE "event_location"
+CREATE TABLE "event_info"
 (
     "event_id"  int references "event" ("event_id"),
     "person_id" int references "person" ("person_id"),

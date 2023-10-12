@@ -1,8 +1,8 @@
 -- Вывести имена родителей по имени человека
-SELECT name
-FROM person
-         INNER JOIN parents
-                    ON person.person_id = parents.parent_id and parents.child_name = 'Sergey Petrov';
+SELECT n1 as parent_name, name as child_name
+FROM person inner join (SELECT child_id, name as n1
+                        FROM parents
+                                 INNER JOIN person p on p.person_id = parents.parent_id) as t1 ON t1.child_id = person.person_id;
 
 -- Вывести события, которые произошли в определенном городе
 SELECT el.city_name, el.obj_name, event_id, person_id

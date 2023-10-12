@@ -1,4 +1,4 @@
-insert into parents (parent_id, child_name) values (2, 'Olvin');
-insert into parents (parent_id, child_name) values (3, 'Olvin');
-insert into parents (parent_id, child_name) values (10, 'Sergey Petrov');
-insert into parents (parent_id, child_name) values (8, 'Sergey Petrov');
+insert into parents (parent_id, child_id) values (2, 1);
+insert into parents (parent_id, child_id) values (3, 1);
+insert into parents (parent_id, child_id) values (11, 13);
+insert into parents (parent_id, child_id) values (12, 13);
